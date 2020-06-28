@@ -20,6 +20,7 @@
         <module>cloud-wms-server</module>
         <module>cloud-order-api</module>
         <module>cloud-order-server</module>
+        <module>cloud-zuul</module>
     </modules>
     <packaging>pom</packaging>
 
