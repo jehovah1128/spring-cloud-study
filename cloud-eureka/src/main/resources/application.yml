@@ -1,0 +1,17 @@
+server:
+  port: 9888
+
+spring:
+  application:
+    name: cloud-eureka
+  profiles:
+    active: local
+
+eureka:
+  instance:
+    hostname: 192.168.1.15
+  client:
+    service-url:
+      defaultZone: http://192.168.1.15:9888/eureka/
+    register-with-eureka: false
+    fetch-registry: false

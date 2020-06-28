@@ -1,0 +1,13 @@
+server:
+  port: 9778
+
+spring:
+  application:
+    name: inventory-server
+  profiles:
+    active: local
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://192.168.1.15:9888/eureka/
