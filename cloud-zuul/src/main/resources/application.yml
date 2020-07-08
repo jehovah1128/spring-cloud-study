@@ -6,6 +6,11 @@ spring:
     name: zuul-getway
   profiles:
     active: local
+  datasource:
+    url: jdbc:mysql://192.168.1.15:3306/study0?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&autoReconnect=true&useSSL=false&serverTimezone=Asia/Shanghai
+    username: root
+    password: liberty123
+    driver-class-name: com.mysql.cj.jdbc.Driver
 
 eureka:
   instance:
@@ -17,5 +22,5 @@ eureka:
 zuul:
   retryable: true
   routes:
-    order-service:
+    order-server:
       path: /order/**

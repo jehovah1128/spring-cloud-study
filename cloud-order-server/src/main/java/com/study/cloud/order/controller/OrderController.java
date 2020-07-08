@@ -18,6 +18,7 @@ public class OrderController implements OrderApi {
     private InventoryService inventoryService;
     @Resource
     private CreditService creditService;
+
     @Override
     public ResultBean placeOrder(@PathVariable("userId") Long userId,
                                  @PathVariable("productId") Long productId,

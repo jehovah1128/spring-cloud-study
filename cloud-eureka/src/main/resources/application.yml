@@ -10,6 +10,11 @@ spring:
 eureka:
   instance:
     hostname: 192.168.1.15
+    lease-expiration-duration-in-seconds: 15
+    lease-renewal-interval-in-seconds: 5
+  server:
+    response-cache-update-interval-ms: 3000
+    eviction-interval-timer-in-ms: 5000
   client:
     service-url:
       defaultZone: http://192.168.1.15:9888/eureka/

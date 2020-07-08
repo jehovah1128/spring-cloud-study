@@ -21,6 +21,7 @@
         <module>cloud-order-api</module>
         <module>cloud-order-server</module>
         <module>cloud-zuul</module>
+        <module>cloud-netty</module>
     </modules>
     <packaging>pom</packaging>
 
